@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Json-File-reader" default="build">
-<property name="Json-File-reader" value="${pluginname}"/>
+<project name="cloudbox.cbapp.build" default="build">
+<property name="plugin" value="${pluginname}"/>
 <property name="publishRepo" value="${publishRepository}"/>
 <property name="version" value="${Version}"/>
 
@@ -19,7 +19,7 @@
 	</target>
 	
 	<target name="publish" description="" depends="">
-		<property name="Json-File-reader" value="${publishRepo}/${plugin}"/>
+		<property name="pluginpublishloc" value="${publishRepo}/${plugin}"/>
 		<mkdir dir="${pluginpublishloc}" />
 		<mkdir dir="${pluginpublishloc}/${version}" />
 		<copy includeemptydirs="false" todir="${pluginpublishloc}/${version}">
